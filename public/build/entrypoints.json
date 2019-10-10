@@ -3,11 +3,20 @@
     "app": {
       "js": [
         "/build/runtime.d2591ff7.js",
-        "/build/0.4c616c47.js",
-        "/build/app.5725c502.js"
+        "/build/app.41b06b88.js"
       ],
       "css": [
         "/build/app.567124b8.css"
+      ]
+    },
+    "todolist": {
+      "js": [
+        "/build/runtime.d2591ff7.js",
+        "/build/0.4c616c47.js",
+        "/build/todolist.6025edcd.js"
+      ],
+      "css": [
+        "/build/todolist.77e27f7a.css"
       ]
     }
   }

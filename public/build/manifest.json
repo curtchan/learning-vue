@@ -1,6 +1,8 @@
 {
   "build/0.4c616c47.js": "/build/0.4c616c47.js",
   "build/app.css": "/build/app.567124b8.css",
-  "build/app.js": "/build/app.5725c502.js",
-  "build/runtime.js": "/build/runtime.d2591ff7.js"
+  "build/app.js": "/build/app.41b06b88.js",
+  "build/runtime.js": "/build/runtime.d2591ff7.js",
+  "build/todolist.css": "/build/todolist.77e27f7a.css",
+  "build/todolist.js": "/build/todolist.6025edcd.js"
 }
