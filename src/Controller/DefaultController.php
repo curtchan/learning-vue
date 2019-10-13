@@ -25,4 +25,12 @@ class DefaultController extends AbstractController
     {
         return $this->render('default/todolist.html.twig');
     }
+
+    /**
+     * @Route("/tictactoe", name="tictactoe")
+     */
+    public function tictactoeAction()
+    {
+        return $this->render('default/tictactoe.html.twig');
+    }
 }

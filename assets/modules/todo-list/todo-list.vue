@@ -56,8 +56,4 @@
         }
     }
 </script>
-<style scoped>
-    li {
-        list-style: none;
-    }
-</style>
+<style src="./todo-list.css"></style>

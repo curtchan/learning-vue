@@ -1,8 +1,17 @@
 {
   "build/0.4c616c47.js": "/build/0.4c616c47.js",
+  "build/1.4072b5b4.css": "/build/1.4072b5b4.css",
+  "build/1.c101c6b3.js": "/build/1.c101c6b3.js",
   "build/app.css": "/build/app.567124b8.css",
   "build/app.js": "/build/app.41b06b88.js",
   "build/runtime.js": "/build/runtime.d2591ff7.js",
-  "build/todolist.css": "/build/todolist.77e27f7a.css",
-  "build/todolist.js": "/build/todolist.6025edcd.js"
+  "build/tictactoe.css": "/build/tictactoe.e34553fd.css",
+  "build/tictactoe.js": "/build/tictactoe.a42a0adb.js",
+  "build/todolist.css": "/build/todolist.383ab767.css",
+  "build/todolist.js": "/build/todolist.a710875f.js",
+  "build/fonts/fontawesome-webfont.eot": "/build/fonts/fontawesome-webfont.674f50d2.eot",
+  "build/fonts/fontawesome-webfont.woff2?v=4.7.0": "/build/fonts/fontawesome-webfont.af7ae505.woff2",
+  "build/fonts/fontawesome-webfont.ttf?v=4.7.0": "/build/fonts/fontawesome-webfont.b06871f2.ttf",
+  "build/fonts/fontawesome-webfont.woff?v=4.7.0": "/build/fonts/fontawesome-webfont.fee66e71.woff",
+  "build/images/fontawesome-webfont.svg?v=4.7.0": "/build/images/fontawesome-webfont.912ec66d.svg"
 }
