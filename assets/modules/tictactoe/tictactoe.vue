@@ -1,21 +1,41 @@
 <template>
-    <div class="align-center">
-        <p>{{ message }}</p>
-        <table>
-            <tbody>
-            <tr v-for="(row, xIndex) in rows">
-                <td
-                        v-for="(col, yIndex) in row"
-                        v-on:click="clickedSquare(xIndex, yIndex)"
-                        v-bind:class="{ 'win': col.win }"
-                >
-                    <i class="fa fa-fw" v-bind:class="{ 'fa-times': col.ticked === 1, 'fa-circle-o': col.ticked === 2}"></i>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-        <div class="actions">
-            <button v-if="finished" v-on:click="restart">Restart</button>
+    <div class="ttt">
+        <div class="column game">
+            <p>{{ message }}</p>
+            <table>
+                <tbody>
+                <tr v-for="(row, xIndex) in rows">
+                    <td
+                            v-for="(col, yIndex) in row"
+                            v-on:click="clickedSquare(xIndex, yIndex)"
+                            v-bind:class="{ 'win': col.win }"
+                    >
+                        <i class="fa fa-fw" v-bind:class="{ 'fa-times': col.ticked === 1, 'fa-circle-o': col.ticked === 2}"></i>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="actions">
+                <button v-if="finished" v-on:click="restart">Restart</button>
+            </div>
+        </div>
+        <div class="column">
+            <table v-if="this.history.length">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Result</th>
+                    <th>Steps</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr v-for="(game, index) in history">
+                    <td>{{ index + 1 }}</td>
+                    <td>{{ winnerMessage(game.winner) }}</td>
+                    <td>{{ game.steps }}</td>
+                </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </template>
@@ -48,20 +68,14 @@
                     {ticked: null, win: false},
                     {ticked: null, win: false}
                 ]],
+                history: [],
                 step: 1
             };
         },
         computed: {
             message: function() {
                 if(this.finished) {
-                    switch(this.finished) {
-                        case 1:
-                            return this.messages.p1win;
-                        case 2:
-                            return this.messages.p2win;
-                        case 3:
-                            return this.messages.tie;
-                    }
+                    return this.winnerMessage(this.finished);
                 }
 
                 if(this.getNextPlayer() === 1) {
@@ -76,6 +90,17 @@
             }
         },
         methods: {
+            winnerMessage: function(finished) {
+                switch(finished) {
+                    case 1:
+                        return this.messages.p1win;
+                    case 2:
+                        return this.messages.p2win;
+                    case 3:
+                        return this.messages.tie;
+                }
+            },
+
             clickedSquare: function(x, y) {
                 if(this.finished || this.rows[x][y].ticked) { //cant click clicked
                     return;
@@ -86,6 +111,8 @@
                 let winner;
                 if(winner = this.checkIfWon()) {
                     this.finished = winner;
+
+                    this.addHistory(this.finished, this.step);
                 }
 
                 this.stepUp();
@@ -184,12 +211,25 @@
                 s1.win = true;
                 s2.win = true;
                 s3.win = true;
+            },
+
+            addHistory: function(winner, steps) {
+                this.history.push({
+                    winner: winner,
+                    steps: steps
+                });
             }
         }
     }
 </script>
 <style>
-    .align-center {
+    .ttt {
+        display: flex;
+    }
+    .ttt > .column {
+        width: 50%;
+    }
+    .ttt > .game {
         text-align: center;
     }
     .actions {
@@ -200,16 +240,21 @@
     }
     table {
         border-collapse: collapse;
+    }
+    .game table {
         margin: auto;
     }
-    td {
+    .game td {
         width: 50px;
         height: 50px;
         text-align: center;
         vertical-align: middle;
         font-size: 38px;
     }
-    td.win {
+    .game td.win {
         background-color: green;
+    }
+    .ttt .actions {
+        text-align: center;
     }
 </style>
