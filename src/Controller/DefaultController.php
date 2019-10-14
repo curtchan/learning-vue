@@ -33,4 +33,12 @@ class DefaultController extends AbstractController
     {
         return $this->render('default/tictactoe.html.twig');
     }
+
+    /**
+     * @Route("/minesweeper", name="minesweeper")
+     */
+    public function minesweeperAction()
+    {
+        return $this->render('default/minesweeper.html.twig');
+    }
 }

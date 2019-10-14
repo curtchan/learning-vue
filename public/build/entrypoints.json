@@ -23,12 +23,24 @@
       "js": [
         "/build/runtime.d2591ff7.js",
         "/build/0.4c616c47.js",
-        "/build/1.c101c6b3.js",
-        "/build/tictactoe.57eaa601.js"
+        "/build/1.e748ea2f.js",
+        "/build/tictactoe.f5614623.js"
       ],
       "css": [
-        "/build/1.4072b5b4.css",
-        "/build/tictactoe.751179fd.css"
+        "/build/1.7c8d3b98.css",
+        "/build/tictactoe.0bd2740e.css"
+      ]
+    },
+    "minesweeper": {
+      "js": [
+        "/build/runtime.d2591ff7.js",
+        "/build/0.4c616c47.js",
+        "/build/1.e748ea2f.js",
+        "/build/minesweeper.767a257e.js"
+      ],
+      "css": [
+        "/build/1.7c8d3b98.css",
+        "/build/minesweeper.bb515e07.css"
       ]
     }
   }
