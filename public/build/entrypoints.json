@@ -54,6 +54,16 @@
         "/build/1.7c8d3b98.css",
         "/build/digitalclock.5f0528ee.css"
       ]
+    },
+    "course1": {
+      "js": [
+        "/build/runtime.d2591ff7.js",
+        "/build/0.4c616c47.js",
+        "/build/course1.eac28f71.js"
+      ],
+      "css": [
+        "/build/course1.94bc792b.css"
+      ]
     }
   }
 }
