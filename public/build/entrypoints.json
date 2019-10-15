@@ -23,8 +23,8 @@
       "js": [
         "/build/runtime.d2591ff7.js",
         "/build/0.4c616c47.js",
-        "/build/1.e748ea2f.js",
-        "/build/tictactoe.f5614623.js"
+        "/build/1.613f8d11.js",
+        "/build/tictactoe.da4da6e8.js"
       ],
       "css": [
         "/build/1.7c8d3b98.css",
@@ -35,12 +35,24 @@
       "js": [
         "/build/runtime.d2591ff7.js",
         "/build/0.4c616c47.js",
-        "/build/1.e748ea2f.js",
-        "/build/minesweeper.767a257e.js"
+        "/build/1.613f8d11.js",
+        "/build/minesweeper.2afab32e.js"
       ],
       "css": [
         "/build/1.7c8d3b98.css",
         "/build/minesweeper.bb515e07.css"
+      ]
+    },
+    "digitalclock": {
+      "js": [
+        "/build/runtime.d2591ff7.js",
+        "/build/0.4c616c47.js",
+        "/build/1.613f8d11.js",
+        "/build/digitalclock.51fc0e8d.js"
+      ],
+      "css": [
+        "/build/1.7c8d3b98.css",
+        "/build/digitalclock.5f0528ee.css"
       ]
     }
   }

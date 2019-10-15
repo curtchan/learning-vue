@@ -41,4 +41,12 @@ class DefaultController extends AbstractController
     {
         return $this->render('default/minesweeper.html.twig');
     }
+
+    /**
+     * @Route("/digitalclock", name="digitalclock")
+     */
+    public function digitalclockAction()
+    {
+        return $this->render('default/digital-clock.html.twig');
+    }
 }
