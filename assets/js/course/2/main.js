@@ -5,9 +5,6 @@ export const eventBus = new Vue({
     methods: {
         createdQuote(quote) {
             this.$emit('createdQuote', quote);
-        },
-        clickedQuote(index) {
-            this.$emit('clickedQuote', index);
         }
     }
 });

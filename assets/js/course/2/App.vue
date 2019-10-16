@@ -9,7 +9,7 @@
         <div class="quotes clearfix">
             <app-quote v-for="(quote, index) in quotes"
                :key="index"
-               :index="index"
+               @click.native="removeQuote(index)"
             >{{ quote.quote }}</app-quote>
         </div>
         <div class="alert alert-info text-center" >
@@ -45,9 +45,6 @@
                 }
 
                 this.quotes.push({quote: quote});
-            });
-            eventBus.$on('clickedQuote', (index) => {
-                this.removeQuote(index);
             });
         },
         methods: {
