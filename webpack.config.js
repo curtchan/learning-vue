@@ -29,7 +29,8 @@ Encore
     .addEntry('minesweeper', './assets/js/minesweeper.js')
     .addEntry('digitalclock', './assets/js/digitalclock.js')
 
-    .addEntry('course1', './assets/js/course/1.js')
+    .addEntry('course1', './assets/js/course/1/main.js')
+    .addEntry('course2', './assets/js/course/2/main.js')
     //.addEntry('page1', './assets/js/page1.js')
     //.addEntry('page2', './assets/js/page2.js')
 

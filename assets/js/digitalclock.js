@@ -6,6 +6,5 @@ import digitalclock from '../modules/digitalclock/digitalclock';
 
 new Vue({
     el: '#app',
-    template: '<div><digitalclock/></div>',
-    components: { digitalclock }
+    render: h => h(digitalclock)
 });

@@ -48,7 +48,7 @@
         "/build/runtime.d2591ff7.js",
         "/build/0.4c616c47.js",
         "/build/1.613f8d11.js",
-        "/build/digitalclock.51fc0e8d.js"
+        "/build/digitalclock.ef3db16b.js"
       ],
       "css": [
         "/build/1.7c8d3b98.css",
@@ -59,10 +59,21 @@
       "js": [
         "/build/runtime.d2591ff7.js",
         "/build/0.4c616c47.js",
-        "/build/course1.eac28f71.js"
+        "/build/course1.95faa6c7.js"
       ],
       "css": [
         "/build/course1.94bc792b.css"
+      ]
+    },
+    "course2": {
+      "js": [
+        "/build/runtime.d2591ff7.js",
+        "/build/0.4c616c47.js",
+        "/build/2.a874361f.js",
+        "/build/course2.d1041057.js"
+      ],
+      "css": [
+        "/build/course2.2f8c77b0.css"
       ]
     }
   }
