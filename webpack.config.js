@@ -31,6 +31,7 @@ Encore
 
     .addEntry('course1', './assets/js/course/1/main.js')
     .addEntry('course2', './assets/js/course/2/main.js')
+    .addEntry('course3', './assets/js/course/3/main.js')
     //.addEntry('page1', './assets/js/page1.js')
     //.addEntry('page2', './assets/js/page2.js')
 

@@ -25,4 +25,12 @@ class CourseProjectController extends AbstractController
     {
         return $this->render('course-project/2.html.twig');
     }
+
+    /**
+     * @Route("3/", name="3")
+     */
+    public function course3Action()
+    {
+        return $this->render('course-project/3.html.twig');
+    }
 }
