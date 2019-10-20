@@ -80,8 +80,19 @@
       "js": [
         "/build/runtime.d2591ff7.js",
         "/build/0.4c616c47.js",
-        "/build/2.46ba38d5.js",
-        "/build/course3.4e172963.js"
+        "/build/2.4d44b877.js",
+        "/build/course3.abc632ac.js"
+      ],
+      "css": [
+        "/build/2.d3f50c0d.css"
+      ]
+    },
+    "course4": {
+      "js": [
+        "/build/runtime.d2591ff7.js",
+        "/build/0.4c616c47.js",
+        "/build/2.4d44b877.js",
+        "/build/course4.3bdbdc36.js"
       ],
       "css": [
         "/build/2.d3f50c0d.css"
