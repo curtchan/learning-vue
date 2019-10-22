@@ -13,7 +13,7 @@
       "js": [
         "/build/runtime.d2591ff7.js",
         "/build/0.4c616c47.js",
-        "/build/todolist.a710875f.js"
+        "/build/todolist.2a86bff4.js"
       ],
       "css": [
         "/build/todolist.383ab767.css"
@@ -24,7 +24,7 @@
         "/build/runtime.d2591ff7.js",
         "/build/0.4c616c47.js",
         "/build/1.613f8d11.js",
-        "/build/tictactoe.da4da6e8.js"
+        "/build/tictactoe.a5770154.js"
       ],
       "css": [
         "/build/1.7c8d3b98.css",
@@ -36,7 +36,7 @@
         "/build/runtime.d2591ff7.js",
         "/build/0.4c616c47.js",
         "/build/1.613f8d11.js",
-        "/build/minesweeper.2afab32e.js"
+        "/build/minesweeper.4113f5b0.js"
       ],
       "css": [
         "/build/1.7c8d3b98.css",
@@ -48,7 +48,7 @@
         "/build/runtime.d2591ff7.js",
         "/build/0.4c616c47.js",
         "/build/1.613f8d11.js",
-        "/build/digitalclock.ef3db16b.js"
+        "/build/digitalclock.7a62d462.js"
       ],
       "css": [
         "/build/1.7c8d3b98.css",
@@ -59,7 +59,7 @@
       "js": [
         "/build/runtime.d2591ff7.js",
         "/build/0.4c616c47.js",
-        "/build/course1.95faa6c7.js"
+        "/build/course1.97866f75.js"
       ],
       "css": [
         "/build/course1.94bc792b.css"
@@ -70,7 +70,7 @@
         "/build/runtime.d2591ff7.js",
         "/build/0.4c616c47.js",
         "/build/3.136f6971.js",
-        "/build/course2.ecd536b6.js"
+        "/build/course2.1d46cd55.js"
       ],
       "css": [
         "/build/course2.fcfa9e2c.css"
@@ -81,7 +81,7 @@
         "/build/runtime.d2591ff7.js",
         "/build/0.4c616c47.js",
         "/build/2.4d44b877.js",
-        "/build/course3.abc632ac.js"
+        "/build/course3.ff40b1c3.js"
       ],
       "css": [
         "/build/2.d3f50c0d.css"
@@ -92,7 +92,7 @@
         "/build/runtime.d2591ff7.js",
         "/build/0.4c616c47.js",
         "/build/2.4d44b877.js",
-        "/build/course4.3bdbdc36.js"
+        "/build/course4.fc80518a.js"
       ],
       "css": [
         "/build/2.d3f50c0d.css"

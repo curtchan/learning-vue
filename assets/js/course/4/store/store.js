@@ -48,6 +48,9 @@ export const store = new Vuex.Store({
             return state.stocks.filter((stock) => {
                 return stock.amount > 0;
             });
+        },
+        hasAnyBoughtStocks: (state, getters) => {
+            return getters.boughtStocks.length > 0;
         }
     },
     mutations: {
@@ -55,11 +58,16 @@ export const store = new Vuex.Store({
             state.day++;
         },
         buyStock: (state, payload) => {
+            let value = payload.amount * payload.stock.value;
+            if(value > state.balance) {
+                alert('Can\'t buy, balance too low!');
+                return;
+            }
+
             payload.stock.amount += payload.amount;
-            state.balance -= payload.amount * payload.stock.value;
+            state.balance -= value;
         },
         sellStock: (state, payload) => {
-            console.log(payload);
             payload.stock.amount -= payload.amount;
             state.balance += payload.amount * payload.stock.value;
         },

@@ -1,7 +1,13 @@
 <template>
     <div class="container">
         <app-menu></app-menu>
-        <router-view class="mt-4"></router-view>
+        <transition
+                enter-active-class="animated slideInLeft"
+                leave-active-class="animated zoomOutRight"
+                mode="out-in"
+                appear>
+            <router-view class="mt-4"></router-view>
+        </transition>
     </div>
 </template>
 
@@ -14,6 +20,3 @@
         }
     }
 </script>
-
-<style>
-</style>

@@ -1,6 +1,9 @@
 <template>
     <div class="row">
-     <app-stock v-for="stock in stocks"
+        <div class="col-md-12" v-if="!hasAnyBoughtStocks">
+            <p class="alert alert-info">Buy something @ Stocks!</p>
+        </div>
+        <app-stock v-for="stock in boughtStocks"
            :key="stock.name"
            :stock="stock"
            :buy="false"
@@ -14,10 +17,11 @@
 
     export default {
         computed: mapGetters([
-            'stocks'
+            'hasAnyBoughtStocks', 'boughtStocks'
         ]),
         components: {
             AppStock: Stock
         }
     }
 </script>
+

@@ -1,5 +1,5 @@
 <template>
-    <div class="col-md-6 mb-4">
+    <div class="col-md-6 mb-4" v-if="display">
         <div class="card">
             <div class="card-header">
                 {{ stock.name }}
@@ -57,6 +57,9 @@
         computed: {
             value() {
                 return this.quantity * this.stock.value + ' $';
+            },
+            display() {
+                return this.buy || (this.stock.amount > 0);
             }
         },
         methods: {
@@ -84,6 +87,8 @@
                 } else {
                     this.sellStock(payload);
                 }
+
+                this.quantity = null;
             },
         }
     }
