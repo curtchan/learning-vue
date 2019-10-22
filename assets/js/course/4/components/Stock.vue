@@ -27,6 +27,7 @@
                                            'btn-success': buy,
                                            'btn-danger': !buy
                                        }"
+                                       :disabled="quantity <= 0"
                                        @click.prevent="btnClicked" :value="buy ? 'Buy' : 'Sell'" >
                                 </div>
                             </div>

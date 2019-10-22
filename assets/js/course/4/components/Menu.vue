@@ -18,9 +18,9 @@
                     <a class="nav-link">Stocks</a>
                 </router-link>
             </ul>
-            <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+            <ul class="navbar-nav flex-row ml-md-auto d-md-flex">
                 <li class="nav-item">
-                    <a class="nav-link" @click="endDay">End day</a>
+                    <a class="nav-link btn btn-outline-warning" @click="endDay">End day</a>
                 </li>
                 <li class="nav-item">
                     <span class="navbar-text">Day: <span class="badge badge-secondary">{{ day }}</span></span>
